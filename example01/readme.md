@@ -1,6 +1,6 @@
 # First off you need to download the wallet, Raven Core
 https://github.com/RavenProject/Ravencoin/releases
-It will take overs to sync the block chain, and you have to configure and rei-index.
+It will take hours to sync the block chain, and you have to configure and rei-index.
 
 # Configure your wallet
 You need to configure your wallet to index addresses and transactions and to run as a server.  
