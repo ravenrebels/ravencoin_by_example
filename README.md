@@ -1,2 +1,2 @@
 # ravencoin_by_example
-Examples of how you can use Ravencoin blockchain with modern web technology
+Learn how to develop stuff with Ravencoin (RVN) and modern web technology
