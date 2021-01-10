@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title>🍺</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <link type="text/css" rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body data-route="route__signin">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link nav__sign-out" href="#">Sign out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="logo">
+        <img class="logo__image" src="./logo.png" />
+      </div>
+    </header>
+
+    <main>
+      <!-- route login-->
+      <section class="sign-in-section">
+        <div id="firebaseui-auth-container"></div>
+      </section>
+
+      <!-- route landing page-->
+      <section class="landing-section">
+        <div class="landing-section__welcome-message"></div>
+        <div class="landing-section__balance">Balance</div>
+        <div class="landing-section__number-of-beers"></div>
+      </section>
+    </main>
+    <script src="./firebaseConfig.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

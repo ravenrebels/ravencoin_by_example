@@ -1,0 +1,59 @@
+body[data-route="route__signin"] .sign-in-section {
+  display: block;
+}
+body[data-route="route__landing"] .landing-section {
+  display: block;
+}
+body[data-route="route__landing"] .nav__sign-out {
+  display: block;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+header,  main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px; 
+  margin: auto;
+  width: 100%;
+  
+}
+
+/*  the sign in section */
+.sign-in-section {
+  display: none;
+  max-width: calc(70vw);
+  margin: auto;
+  margin-top: 3rem;
+}
+
+/* the landing / main section */
+.landing-section {
+  display: none;
+}
+.nav__sign-out {
+  display: none;
+}
+
+
+.logo {
+  text-align: center;
+}
+.logo__image {
+  max-width: 400px;
+  width: 100%;
+}
+.landing-section {
+  text-align: center;
+  margin-top: 4rem;
+}
+.landing-section__number-of-beers {
+  font-size: 500%;
+}
+.landing-section__balance{
+  font-size: 200%;
+}
