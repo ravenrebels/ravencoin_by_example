@@ -4,9 +4,9 @@ if (!fs.existsSync("config.json")) {
   console.error(`create file config.json with rpcUsername, rcpPassword and asset
   for example
   {
-    rpcUsername: "super",
-    rpcPassword: "secret",
-    asset: "BEER_TOKEN",
+    "rpcUsername": "super",
+    "rpcPassword": "secret",
+    "asset": "BEER_TOKEN",
   };
   `);
 }
