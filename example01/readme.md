@@ -22,7 +22,7 @@ rpcpassword=supermegasecret
 See index.js for example
 
 # How to run the example code
-npm index configfile=c\myconfig.json  
+node index configfile=c\myconfig.json  
 Where myconfig.json should be something like  
 {  
     "rpcUsername":"your username",  
